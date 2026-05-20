@@ -1,64 +1,31 @@
-# [Astro](https://astro.build) Blog Template
+# 🚀 amercurio.com.br
 
-[![Screenshot](screenshot.png)](https://astro-blog-template.netlify.app/)
+Este é o repositório do meu portfólio, construído utilizando o framework **Astro**.
 
-## 👉 Check out the ✨ [Live Demo](https://astro-blog-template.netlify.app/) ✨
+A proposta deste projeto vai muito além de apenas exibir meus trabalhos: ele é o meu laboratório prático de desenvolvimento front-end.
 
-## 👩‍🚀 Getting Started
+---
 
-### Locally
+## 🎯 Por que construir do zero (e com Astro)?
 
-```
-npm init astro -- --template Charca/astro-blog-template
-```
+Como **Visual Designer**, eu já tenho familiaridade com a criação e a governança de **Design Systems**, mas antes a minha atuação era limitada às decisões de design (UI/UX). Toda a parte de tecnologia e implementação ficava sob a responsabilidade de um time de desenvolvedores.
 
-### On StackBlitz
+Em vez de recorrer a um template pronto de WordPress, onde eu apenas atualizaria o conteúdo, decidi codar meu próprio site para:
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/charca/astro-blog-template)
+* **Aprofundar na engenharia:** Entender como o design se traduz em código real (HTML, CSS, JS/TS e componentes).
+* **Decisões mais acertadas:** Compreender as limitações e possibilidades técnicas para alinhar o design visual aos objetivos reais de cada projeto.
+* **Autonomia e Comunicação:** Me tornar mais independente para resolver problemas por conta própria e poder conversar com mais propriedade técnica com os times de desenvolvimento em futuros projetos.
 
-## ✨ Features:
+---
 
-- ✅ Astro 4.0
-- ✅ Dark Mode
-- ✅ Full Markdown support
-- ✅ SEO-friendly setup with canonical URLs and OpenGraph data
-- ✅ RSS 2.0 generation
-- ✅ Sitemap.xml generation
+## 🛠️ Stack Tecnológica
 
-## 🚀 Project Structure
+* **Framework:** Astro
+* **Linguagem:** TypeScript / JavaScript
+* **Estrutura & Estilização:** HTML5 & CSS3
 
-Inside of your Astro project, you'll see the following folders and files:
+---
 
-```
-/
-├── public/
-│   ├── robots.txt
-│   └── favicon.ico
-├── src/
-│   ├── components/
-│   │   └── Tour.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+## ✒️ Créditos e Agradecimentos
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command           | Action                                       |
-| :---------------- | :------------------------------------------- |
-| `npm install`     | Installs dependencies                        |
-| `npm run dev`     | Starts local dev server at `localhost:3030`  |
-| `npm run build`   | Build your production site to `./dist/`      |
-| `npm run preview` | Preview your build locally, before deploying |
-
-## 👀 Want to learn more?
-
-Feel free to check [Astro's documentation](https://github.com/withastro/astro) or jump into Astro's [Discord server](https://astro.build/chat).
+Este projeto foi ramificado a partir do astro-blog-template criado por Charca (https://github.com/Charca/astro-blog-template), servindo como fundação técnica inicial para a minha jornada de aprendizado em Astro.
