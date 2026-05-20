@@ -17,15 +17,3 @@ Em vez de recorrer a um template pronto de WordPress, onde eu apenas atualizaria
 * **Autonomia e Comunicação:** Me tornar mais independente para resolver problemas por conta própria e poder conversar com mais propriedade técnica com os times de desenvolvimento em futuros projetos.
 
 ---
-
-## 🛠️ Stack Tecnológica
-
-* **Framework:** Astro
-* **Linguagem:** TypeScript / JavaScript
-* **Estrutura & Estilização:** HTML5 & CSS3
-
----
-
-## ✒️ Créditos e Agradecimentos
-
-Este projeto foi ramificado a partir do astro-blog-template criado por Charca (https://github.com/Charca/astro-blog-template), servindo como fundação técnica inicial para a minha jornada de aprendizado em Astro.
