@@ -10,7 +10,7 @@ export interface Props {
 }
 
 const { title, description, permalink } = Astro.props
-const socialUrl = (Astro.site?.href || 'https://amercurio.com.br/') + 'assets/social.png';
+const socialUrl = (Astro.site?.href || 'https://amercurio.com.br/') + 'assets/assinatura.svg';
 ---
 
 <!-- Global Metadata -->
@@ -41,14 +41,6 @@ const socialUrl = (Astro.site?.href || 'https://amercurio.com.br/') + 'assets/so
 
 <!-- This is intentionally inlined to avoid FOUC -->
 <script is:inline>
-  const root = document.documentElement
-  const theme = localStorage.getItem('theme')
-  if (
-    theme === 'dark' ||
-    (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)
-  ) {
-    root.classList.add('theme-dark')
-  } else {
-    root.classList.remove('theme-dark')
-  }
+  // Force dark theme by default; theme-light is currently disabled in JS logic.
+  document.documentElement.classList.add('theme-dark');
 </script>

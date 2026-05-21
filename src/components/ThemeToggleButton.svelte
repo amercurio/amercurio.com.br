@@ -1,22 +1,25 @@
 <script>
   const rootEl = typeof document !== 'undefined' ? document.documentElement : null;
   const themes = ['light', 'dark'];
-  let theme = ''
+  let theme = 'dark';
 
   if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
-    theme = localStorage.getItem('theme');
-  } else if (typeof window !== 'undefined' && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    theme = 'dark';
+    const storedTheme = localStorage.getItem('theme');
+    if (storedTheme === 'dark') {
+      theme = 'dark';
+    }
+    // 'light' theme support is kept in code for future use, but currently disabled.
   }
 
   function handleChange(event) {
-    theme = event.target.value;
-    localStorage.setItem('theme', theme);
+    const selectedTheme = event.target.value;
+    if (selectedTheme === 'dark') {
+      theme = 'dark';
+      localStorage.setItem('theme', theme);
+    }
   }
 
-  $: if (rootEl && theme === 'light') {
-    rootEl.classList.remove('theme-dark');
-  } else if (rootEl && theme === 'dark') {
+  $: if (rootEl) {
     rootEl.classList.add('theme-dark');
   }
 
@@ -58,6 +61,7 @@
         value={t}
         title={`Use ${t} theme`}
         aria-label={`Use ${t} theme`}
+        disabled={t === 'light'}
         on:change={handleChange}
       />
     </label>
